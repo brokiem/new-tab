@@ -1,0 +1,15 @@
+@import 'base.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .shadow-all {
+        box-shadow: 0 0 5px rgba(115, 115, 115, 0.4);
+    }
+}
+
+::placeholder {
+    color: #b2b2b2;
+}
