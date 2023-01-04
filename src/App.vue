@@ -1,8 +1,9 @@
 <script>
 import SettingsModal from "./components/SettingsModal.vue";
+import Shortcuts from "@/components/Shortcuts.vue";
 
 export default {
-  components: {SettingsModal},
+  components: {Shortcuts, SettingsModal},
   setup() {
     let isFirefox = navigator.userAgent.match(/firefox|fxios/i);
     let settings = {
@@ -48,6 +49,9 @@ methods: {
   <div class="text-center">
     <SearchInput :settings="settings"/>
   </div>
+
+  <!-- Shortcuts -->
+  <Shortcuts class="mt-8" :settings="settings"/>
 
   <SettingsModal/>
 </template>
