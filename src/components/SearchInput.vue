@@ -36,7 +36,26 @@ export default {
       event.preventDefault();
 
       const search = document.getElementById("search-input").value;
-      window.location = `https://www.google.com/search?q=${encodeURIComponent(search).replaceAll('%20', '+')}`;
+
+      if (this.isURL(search)) {
+        window.location.href = search;
+        return;
+      }
+
+      window.location.href = `https://www.google.com/search?q=${encodeURIComponent(search).replaceAll('%20', '+')}`;
+    },
+    isURL(string) {
+      if (!string) return false;
+
+      const inputElement = document.createElement('input');
+      inputElement.type = 'url';
+      inputElement.value = string;
+
+      const isValid = inputElement.checkValidity();
+
+      inputElement.remove();
+
+      return isValid;
     }
   }
 }
