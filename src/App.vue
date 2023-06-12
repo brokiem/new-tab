@@ -39,7 +39,7 @@ methods: {
     </button>
   </div>
 
-  <div class="pt-[120px]"></div>
+  <div class="pt-[150px]"></div>
 
   <!-- Logo -->
   <FirefoxLogo v-if="settings.logo === 'firefox' || (settings.logo === 'default' && isFirefox)"/>

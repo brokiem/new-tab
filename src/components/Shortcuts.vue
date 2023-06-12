@@ -2,7 +2,7 @@
   <div class="flex flex-wrap justify-center justify-items-center mx-5">
     <a :href="shortcut.url" class="hover:bg-white/20 transition duration-[20ms] rounded-md" v-for="shortcut in shortcuts">
       <div class="mx-6 mt-4">
-        <div class="text-center p-3" style="background-color: rgb(42, 42, 42)" :style="[{ 'border-radius': isRoundedFull ? '9999px' : '10px' }]">
+          <div class="text-center p-3" style="background-color: rgb(45, 45, 45)" :style="[{ 'border-radius': isRoundedFull ? '9999px' : '10px' }]">
           <img width="28" height="28" :class="shortcut.style" :src="`https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${shortcut.url}&size=64`" alt="Shortcut icon">
         </div>
       </div>
