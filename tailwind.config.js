@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         'firefox-dark': '#20123A',
-        'dark-gray': '#3d3d3d'
+        'dark-gray': '#272727'
       }
     },
   },
